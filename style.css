@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary: #22a6b3;
+    --dark: #fff;
+    --body:black;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:ital,wght@0,300;0,400;1,200;1,400&display=swap');
+body{
+    font-family: montserrat;
+}
+#btn1 button{
+
+    width: 70px;
+    height: 35px;
+    background: var(--primary);
+    border: var(--primary);
+    color: var(--body) ;
+    border-radius: 5px;
+    
+}
+#btn1 button:hover{
+    color: var(--dark);
+    background:var(--body);
+}
+.active{
+    color: #22a6b3 !important;
+}
+#btn2 button{
+    width: 100px;
+    height: 40px;
+    
+    background: #22a6b3;
+    border: var(--primaryy);
+   
+    color: var(--dark);
+    border-radius: 5px;
+}
+#btn2 button:hover{
+    color: #fff;
+    background:black;
+}
+.navbar-nav a{
+    font-family: 'Moo Dance', cursive;
+    font-size: 18cpx;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: var(--body);
+}
+.navbar-brand{
+    font-family: 'Moo Dance', cursive;
+   
+   
+}
+
+
+.navbar-brand span{
+    color: var(--primary);
+   
+}
+.navbar-light .navbar-brand{
+    color: var(--body);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: var(--body);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--body);
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover
+{
+color:#22a6b3;
+}
+.form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 150px;
+  }
+  .submit-button {
+    background-color: #22a6b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .submit-button:hover {
+    background-color: black;
+  }
+
+  .about{
+    font-weight:  bold;
+    font-size: 78px;
+    background-color:#22a6b3;
+    background-size:auto;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top:40px ;
+    margin-bottom: 90px;
+
+
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#slideImg {
+    width: 100%;
+    height: 90vh;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    position: absolute;
+    top: 0;
+}
+
+.main{
+    font-family: 'Moo Dance', cursive;
+    height: 100vh;
+    width: 100%;
+    background-image: url(banner4.jpg);
+    background-position:  cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+ 
+    z-index: 2;
+
+}
+.main::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(18, 16, 16, 0.8);
+    z-index: -1;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+.stars{
+    padding: 10px 0;
+}
+.stars i{
+font-size: 0.8rem;
+color: goldenrod;
+}
+.p-name{
+    font-size: 1rem;
+    color: gray;
+}
+.heading-2 span{
+    color: var(--primary);
+}
+.heading-2{
+    font-weight: bold;
+}
+.card image{
+    height: 20px;
+    width: 50%;
+}
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+  
+    transition: 0.3s all;
+}
+.product img:hover{
+    opacity: 0.7;
+}
+
+.product .buy-button{
+    width: 100px;
+    height: 35px;
+    
+    background: var(--primary);
+    border: var(--primary);
+    color: var(--dark)
+    ;
+    border-radius: 5px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-button{
+    width: 100px;
+    height: 35px;
+    
+    
+    border: var(--primary);
+    color: var(--dark)
+    ;
+    border-radius: 5px;
+    transform: translateY(0);
+    opacity: 1;
+   
+}
+.sproduct input{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #22a6b3;
+}
+.sproduct input:focus{
+    outline: none;
+}
+.download-btn{
+    width: 40px;
+    height: 30px;
+    
+    background: var(--primary);
+    border: var(--primaryy);
+   
+    color: var(--dark);
+    border-radius: 5px;
+}
+.download-btn:hover{
+    color: #fff;
+    background-color: black;
+}
+
+.hero{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+
+
+}
+.hero ul{
+    display: flex;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.hero ul li{
+    list-style: none;
+    background: var(--dark);
+    border: 1px solid #22a6b3;
+    padding: 8px 20px;
+    margin: 5px;
+    
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.hero ul li:hover{
+    background: var(--primary);
+}
+#banner{
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner2 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(card1.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+ 
+}
+#banner2 .banner-box:hover
+{
+    opacity: 0.7;
+}
+
+#banner2 .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(card2.webp);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner2 .banner-box2:hover
+{
+    opacity: 0.7;
+}
+#banner2 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(1.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+   
+}
+#banner2 .banner-box3:hover
+{
+    opacity: 0.7;
+}
+#banner2 h2{
+    color: rgb(63, 59, 59);
+    font-weight: bold;
+    font-size: 22px;
+     font-family: 'Moo Dance', cursive;
+}

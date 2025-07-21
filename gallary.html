@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="gallery.css">
+    <!-- <script src="js/gallery.js"></script> -->
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        
+    </script>
+<!-- ********************************navigation bar****************************************** -->
+<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light" style="background-color:#fafafa;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size: 40px;"><span>PET</span>BOT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="gallary.html"><span style="color: #22a6b3;">Gallery</span></a></li><li class="nav-item"><a class="nav-link" aria-current="page" href="contactus.html">Contact us</a></li><li class="nav-item"><a class="nav-link" href="chart.html"><i class="bx bxs-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+        </li>
+        
+        
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+ <!-- ********************************navigation bar end****************************************** -->
+
+  
+
+ <section class="gallery min-vh-100">
+  <div class="container py-5 text-center">
+    <h3 class="heading-2" style="font-size: 45px; font-weight:bold;">Our <span>Gallery</span></h3>
+    <hr class="mx-auto">
+    <p>Here you can check out our gallery section.</p>
+  </div>
+
+  <div class="container-lg">
+    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+      <div class="col">
+        <img src="g8.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g7.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="oil8.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="pet2.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="j7.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="b11.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g11.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g12.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g13.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g14.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g15.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+      <div class="col">
+        <img src="g16.jpg" alt="Gallery Image" class="gallery-item img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered model-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="g8.jpg" alt="" class="modal-img">
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+  <!-- ****************************************pc bottles end************************************************* -->
+
+
+
+ 
+    
+    <script>
+document.addEventListener("click",function(e){
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute("src");
+       document.querySelector(".modal-img").src =src;
+       const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'))
+       myModal.show()
+    }
+})
+    </script>
+
+    
+
+<footer class=" pt-5 pb-5 bg-black w-100" style="color: gray; ">
+  <div class="container px-4 text-md-left">
+    <div class="row gx-9">
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs " style="color: #48dbfb;">
+          About Us
+        </h5>
+
+        <!-- Text -->
+        <p class="mb-6">
+          A bottle is a narrow-necked container made of an impermeable material in various shapes and sizes that stores and transports liquids. Its mouth, at the bottling line, can be sealed with an internal stopper, an external bottle cap, a closure, or induction sealing.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+
+          Contact info
+        </h5>
+
+        <!-- List -->
+        <ul class="list-unstyled mb-6">
+          <li class="d-flex mb-2">
+           
+            Aptech North Nazimabad
+          </li>
+          <li class="d-flex mb-2">
+           
+            +9234578969443
+          </li>
+          <li class="d-flex">
+            <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:admin@domain.com " style="color: #48dbfb;">petbot@gmail.com</a>
+          </li>
+        </ul>
+
+        
+
+      </div>
+      
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+          Opening hours
+        </h5>
+
+        <!-- Text -->
+        <div class="mb-3">
+          <div class="text-xs">Monday - Thursday</div>
+          <div class="font-serif">10:00 AM - 11:00 PM</div>
+        </div>
+
+        <!-- Text -->
+        <div class="mb-6">
+          <div class="text-xs">Friday - Sunday</div>
+          <div class="font-serif">12:00 AM - 03:00 AM</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+
+        
+
+        <!-- Copyright -->
+       
+      </div>
+    </div>
+  </div>
+ 
+
+  <hr style="width: 100%; color: #48dbfb;">
+
+  
+  <div class="d-flex text-center" style="margin-left: 40%;">  
+  
+    &copy; 2023 PETBOT. All rights reserved.
+  </div>
+ 
+
+</footer>
+
+
+ 
+<script src="js/universal-cart.js"></script></body>
+</html>
+

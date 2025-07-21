@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="product.css">
+
+</head>
+<body onload=" slider()">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<!-- ********************************navigation bar****************************************** -->
+<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light" style="background-color:#fafafa;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size: 40px;"><span>PET</span>BOT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="gallary.html">Gallery</a></li><li class="nav-item"><a class="nav-link" aria-current="page" href="contactus.html">Contact us</a></li><li class="nav-item"><a class="nav-link" href="chart.html"><i class="bx bxs-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+        </li>
+        
+        
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+ <!-- ********************************Background img****************************************** -->
+
+
+ 
+
+<div class="main vh-100 d-flex align-items-center" id="home">
+  <div class="container" >
+      <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+              <h1 class="display-4" style="font-weight: bold; color: #fff; font-size: 50px;">Polyethylene <span style="color: #22a6b3;">Terephthalate </span> Bottles</h1>
+              <p class="text-white">PET bottles and containers have been safely used to package beverage, food, personal care and household items since the introduction of the first PET bottle in the 1970s; they are easily identified by the #1 code on or near the bottom.</p>
+              <a href="aboutus.html"><div id="btn2"><button>Learn More</button></div></a>
+          </div>
+      </div>
+  
+  </div>
+  </div>
+<!-- ***********galley section***************** -->
+
+  <section class="gallery min-vh-100">
+
+    <div class="container mt-5 py-5  text-center">
+      <h3 class="heading-2" style="font-size: 45px; font-weight:bold; ">Our <span> Gallery</span></h3>
+      <hr class="mx-auto">
+      <p>Here you can check out our gallery section.</p>
+    </div>
+    <div class="container-lg">
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+          <img src="g8.jpg" alt="" class="gallery-item" style="height: 40vh;">
+         
+        </div>
+        <div class="col">
+          <img src="g7.jpg" alt="" class="gallery-item"  style="height: 40vh;">
+         
+        </div>
+        <div class="col">
+          <img src="oil8.jpg" alt="" class="gallery-item" style="height: 40vh;">
+         
+        </div>
+        <div class="col">
+          <img src="pet2.jpg" alt="" class="gallery-item" style="height: 40vh;">
+         
+        </div>
+        <div class="col">
+          <img src="j7.jpg" alt="" class="gallery-item" style="height: 40vh;">
+         
+        </div>
+        <div class="col">
+          <img src="b11.jpg" alt="" class="gallery-item" style="height: 40vh;">
+         
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered model-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="g8.jpg" alt="" class="modal-img">
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+  <!-- ****************************************gallery js************************************************* -->
+
+
+
+ 
+    
+    <script>
+document.addEventListener("click",function(e){
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute("src");
+       document.querySelector(".modal-img").src =src;
+       const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'))
+       myModal.show()
+    }
+})
+    </script>
+
+
+<!-- *********************sliderr****************** -->
+<div class="banner">
+  <div class="slider">
+    <img src="card3.jpg" id="slideImg">
+  </div>
+  <div class="overlay">
+    <div class="content">
+    
+    </div>
+  </div>
+   
+  
+</div>
+<!-- **************************slider js*************************** -->
+<script>
+var slideImg=document.getElementById("slideImg");
+
+var images= new Array(
+  "sale.jpg",
+  "slider2.jpg",
+  "card3.jpg",
+  "sale4.jpg",
+  "sale5.jpg"
+  
+ 
+);
+var len= images.length;
+var i=0;
+function slider(){
+  if(i > len-1){
+      i=0;
+  }
+  slideImg.src=images[i];
+  i++;
+  setTimeout('slider()',2000);
+}
+
+</script>
+<!-- ************************new arrivals*************************** -->
+<div class="container mt-5 py-5  text-center">
+  <h3 class="heading-2" style="font-size: 45px; font-weight:bold; ">New <span> Arrivals</span></h3>
+  <hr class="mx-auto">
+  <p>Here you can check out our new arrivals.</p>
+</div>
+<div class="container">
+  <div class="row mx-auto container">
+    <div  onclick="window.location.href='pc5.html';" class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3 w-50 " src="pc5.jpg" alt="" style="height: 53%;">
+      <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+      </div>
+      <h5 class="p-name">Polycarbonate Bottle</h5>
+      <h6 class="p-price">PKR 500</h6>
+      <button class="buy-button">Shop Now</button>
+
+  </div>
+
+
+  <div onclick="window.location.href='pet6.html';" class="product text-center col-lg-3 col-md-4 col-12">
+    <img class="img-fluid mb-3" src="pet6.jpg" alt="" style="height: 200px;">
+    <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+    </div>
+    <h5 class="p-name">Household Chemical Bottle</h5>
+    <h6 class="p-price">PKR 1,150</h6>
+    <button class="buy-button">Shop Now</button>
+
+</div>
+
+
+
+      <div onclick="window.location.href='oil7.html';"  class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="oil7.jpg" alt="" style="height: 200px;">
+        <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <h5 class="p-name">Oil Bottles
+        </h5>
+        <h6 class="p-price">PKR 500</h6>
+        <button class="buy-button">Shop Now</button>
+
+    </div>
+
+
+    <div onclick="window.location.href='pet4.html';" class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="pet4.jpg" alt="" style="height: 200px;">
+      <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+      </div>
+      <h5 class="p-name">Pet Bottle</h5>
+      <h6 class="p-price">PKR 950</h6>
+      <button class="buy-button">Shop Now</button>
+
+  </div>
+      </div>
+    </div>
+    <!-- ********************form********************* -->
+    <section id="banner2">
+      <div class="banner-box"  onclick="window.location.href='pp.html';">
+        <h2><span style="color: #22a6b3;"> Polypropylene</span><br> Bottles</h2>
+
+      </div>
+      <div class="banner-box banner-box2" onclick="window.location.href='pet.html';">
+        <h2>Polyethylene <span style="color: #22a6b3;">  terephthalate </span><br>Bottles</h2>
+
+      </div>
+      <div class="banner-box banner-box3" onclick="window.location.href='pc.html';">
+        <h2> <span style="color: #22a6b3;"> Polycarbonate</span> <br>Bottles</h2>
+
+      </div>
+
+    </section>
+  
+
+    <!--********************* form style................... -->
+  
+    <style>
+    form {
+      max-width: 500px;
+      
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10%;
+      margin-top: 10%;
+    }
+    
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: none;
+      background: #f2f2f2;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+    
+    input[type="submit"] {
+      background: #22a6b3;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor:pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background:black;
+    }
+    
+    .error {
+      color: red;
+      margin-bottom: 10px;
+    }
+  </style>
+
+
+  <section id="main">
+    <div class="container mt-5 py-5  text-center">
+      <h3 class="heading-2" style="font-size: 45px; font-weight:bold; ">Drop Us <span> Feedback</span></h3>
+      <hr class="mx-auto">
+      <p>We welcome your suggestions and ideas! Do you like our products? Please do write us for betterment.</p>
+    </div>
+    <div> <form id="myForm" style="margin-top: 1px;">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+      
+      <label for="message">Any comment</label>
+      <textarea  name="message" required></textarea>
+      
+      <!-- <label for="remarks">Remarks</label>
+      <input type="text" name="remarks"> -->
+      
+      <input type="submit" value="submit" style="background-color: #22a6b3;">
+  <p id="user-error" style="color: #22a6b3; justify-content: center; display: flex;" ></p>
+
+    </form>
+  </div>
+  <script>
+    const form = document.querySelector('#myForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // prevent form submission
+    const nameInput = document.querySelector('input[name="name"]');
+    const emailInput = document.querySelector('input[name="email"]');
+    const messageInput = document.querySelector('textarea[name="message"]');
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+    // if (name === '') {
+    //   alert('Please enter your name.');
+    //   nameInput.focus();
+    //   return false;
+    // }
+    // if (email === '') {
+    //   alert('Please enter your email.');
+    //   emailInput.focus();
+    //   return false;
+    // }
+    if (message === '') {
+      alert('Please enter your message.');
+      messageInput.focus();
+      return false;
+    }
+    else{
+      document.getElementById("user-error").innerHTML="Your message is successfully send"
+      setTimeout(() => {
+        document.getElementById("user-error").innerHTML=""
+      }, 3000);
+    }
+    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+  
+    form.reset();
+    // Perform additional validation and form submission as needed
+  });
+  </script>
+<!-- *******************footer********************8 -->
+<footer class=" pt-5 pb-5 bg-black w-100" style="color: gray; ">
+  <div class="container px-4 text-md-left">
+    <div class="row gx-9">
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs " style="color: #48dbfb;">
+          About Us
+        </h5>
+
+        <!-- Text -->
+        <p class="mb-6">
+          A bottle is a narrow-necked container made of an impermeable material in various shapes and sizes that stores and transports liquids. Its mouth, at the bottling line, can be sealed with an internal stopper, an external bottle cap, a closure, or induction sealing.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+
+          Contact info
+        </h5>
+
+        <!-- List -->
+        <ul class="list-unstyled mb-6">
+          <li class="d-flex mb-2">
+           
+            Aptech North Nazimabad
+          </li>
+          <li class="d-flex mb-2">
+           
+            +9234578969443
+          </li>
+          <li class="d-flex">
+            <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:admin@domain.com " style="color: #48dbfb;">petbot@gmail.com</a>
+          </li>
+        </ul>
+
+        
+
+      </div>
+      
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+          Opening hours
+        </h5>
+
+        <!-- Text -->
+        <div class="mb-3">
+          <div class="text-xs">Monday - Thursday</div>
+          <div class="font-serif">10:00 AM - 11:00 PM</div>
+        </div>
+
+        <!-- Text -->
+        <div class="mb-6">
+          <div class="text-xs">Friday - Sunday</div>
+          <div class="font-serif">12:00 AM - 03:00 AM</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+
+        
+
+        <!-- Copyright -->
+       
+      </div>
+    </div>
+  </div>
+ 
+
+  <hr style="width: 100%; color: #48dbfb;">
+
+  
+  <div class="d-flex text-center" style="margin-left: 40%;">  
+  
+    &copy; 2023 PETBOT. All rights reserved.
+  </div>
+ 
+
+</footer>
+
+
+ 
+<script src="js/universal-cart.js"></script></body>
+</html>
+

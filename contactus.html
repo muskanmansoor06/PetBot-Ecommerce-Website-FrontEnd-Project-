@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        
+    </script>
+<!-- ********************************navigation bar****************************************** -->
+<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light" style="background-color:#fafafa;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size: 40px;"><span>PET</span>BOT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="gallary.html">Gallery</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
+        </li>
+        
+        
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+
+<section id="main">
+  <div class="container mt-5 py-5  text-center">
+    <h3 class="heading-2" style="font-size: 50px; font-weight:bold; ">Contact <span> Us</span></h3>
+    <hr class="mx-auto">
+    <p>Do you have any question? Please do not hasitate to contact us.Our team will come back to you within a
+      matter of hours to help you.</p>
+  </div>
+  <div class="container">
+    
+<div class="container">
+<form  id="contact-form"> 
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text"  name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email"  name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea  name="message" required></textarea>
+  </div>
+  <button type="submit" class="submit-button">Submit</button>
+</form>
+<p id="user-error" style="color:#22a6b3; justify-content:center; display:flex;" ></p>
+</div>
+
+</section>
+
+ 
+   
+  
+   
+    
+
+
+<script>
+  const form = document.querySelector('#contact-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // prevent form submission
+  const nameInput = document.querySelector('input[name="name"]');
+  const emailInput = document.querySelector('input[name="email"]');
+  const messageInput = document.querySelector('textarea[name="message"]');
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+  // if (name === '') {
+  //   alert('Please enter your name.');
+  //   nameInput.focus();
+  //   return false;
+  // }
+  // if (email === '') {
+  //   alert('Please enter your email.');
+  //   emailInput.focus();
+  //   return false;
+  // }
+  if (message === '') {
+    alert('Please enter your message.');
+    messageInput.focus();
+    return false;
+  }
+  else{
+    document.getElementById("user-error").innerHTML="Your message is successfully send"
+    setTimeout(() => {
+      document.getElementById("user-error").innerHTML=""
+    }, 3000);
+  }
+  console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+  form.reset();
+  // Perform additional validation and form submission as needed
+});
+</script>
+
+<br/><br/>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.97056205332!2d67.02430567538718!3d24.94071049063853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1678904148616!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  
+<footer class=" pt-5 pb-5 bg-black w-100" style="color: gray; margin-top: 10%; ">
+  <div class="container px-4 text-md-left">
+    <div class="row gx-9">
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs " style="color: #22a6b3;">
+          About Us
+        </h5>
+
+        <!-- Text -->
+        <p class="mb-6">
+          A bottle is a narrow-necked container made of an impermeable material in various shapes and sizes that stores and transports liquids. Its mouth, at the bottling line, can be sealed with an internal stopper, an external bottle cap, a closure, or induction sealing.
+        </p>
+
+      </div>
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+
+          Contact info
+        </h5>
+
+        <!-- List -->
+        <ul class="list-unstyled mb-6">
+          <li class="d-flex mb-2">
+           
+            Aptech North Nazimabad
+          </li>
+          <li class="d-flex mb-2">
+           
+            +9234578969443
+          </li>
+          <li class="d-flex">
+            <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:admin@domain.com " style="color: #22a6b3;">petbot@gmail.com</a>
+          </li>
+        </ul>
+
+        
+
+      </div>
+      
+      <div class="col-sm-4">
+
+        <!-- Heading -->
+        <h5 class="text-xs "style="color: #48dbfb;">
+          Opening hours
+        </h5>
+
+        <!-- Text -->
+        <div class="mb-3">
+          <div class="text-xs">Monday - Thursday</div>
+          <div class="font-serif">10:00 AM - 11:00 PM</div>
+        </div>
+
+        <!-- Text -->
+        <div class="mb-6">
+          <div class="text-xs">Friday - Sunday</div>
+          <div class="font-serif">12:00 AM - 03:00 AM</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+
+        
+
+        <!-- Copyright -->
+       
+      </div>
+    </div>
+  </div>
+ 
+
+  <hr style="width: 100%; color: #22a6b3;">
+
+  
+  <div class="d-flex text-center" style="margin-left: 40%;">  
+  
+    &copy; 2023 PETBOT. All rights reserved.
+  </div>
+ 
+
+</footer>
+
+   
+
+<script src="js/universal-cart.js"></script></body>
+</html>
+   
+
+   
+

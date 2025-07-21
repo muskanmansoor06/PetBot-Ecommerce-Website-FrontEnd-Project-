@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+   <style>
+    .service{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.service::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+
+
+}
+.service .iconbox{
+    background-color: #fff;
+    color: var(--primary);
+}
+.service:hover h5,
+.service:hover p{
+    color: #fff;
+}
+.service:hover::after{
+    opacity: 1;
+    top: 0;}
+   </style>
+
+</head>
+<body>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        
+    </script>
+
+ 
+
+<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light" style="background-color:#fafafa;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size: 40px;"><span>PET</span>BOT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="gallary.html">Gallery</a></li><li class="nav-item"><a class="nav-link" aria-current="page" href="contactus.html">Contact us</a></li><li class="nav-item"><a class="nav-link" href="chart.html"><i class="bx bxs-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+        </li>
+        
+        
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-2 py-5  text-center">
+  <h3 class="heading-2" style="font-size: 45px; font-weight:bold; ">About <span>Us</span></h3>
+  <hr class="mx-auto">
+ 
+</div>
+
+
+  <div class="container py-5 text-center">
+  
+   
+ 
+    <div class="row" style="mask-type: 50px;">
+    <div class="col-md-6 py-3 py-md-0" >
+      <div class="card">
+        <img src="about picture.webp" alt="">
+      </div>
+       </div>
+       <div class="col-md-6 py-3 py-md-0">
+        <h1 style="font-family: 15px;">
+          What is PETBot Bottles?</h1>
+          <div class="aboutp"> <p>With no more filament needed, PETBOT machine. allows you to make 3D Filament out of PET Plastic. Bottles. All pics are 3D prints from bottles of different colors. and brands, made by us and our customers, using.</p>
+            <p>Polypropolene (PP) is the material most baby bottles are made from! These bottles are very safe & toxin free so perfect for your little one. They are ergonomic, lightweight and crucially our cheapest option in the range.</p>
+            <p>Polycarbonate bottles remain impact resistant down to -135°C and are usable to +135°C, making them suitable for use from the freezer to the autoclave. Polycarbonate bottles are chemically compatible with weak acids, alcohols and aliphatic hydrocarbons.</p>
+
+        
+      </div>
+
+      </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="container" style="margin-top: 2%;">
+  <div class="row justify-content-center">
+    <div class="gap-3 col-md-6 col-lg-4 col-sm-12">
+      <div class="card" style="border: 1px solid #22a6b3;">
+        <div class="card-body">
+          <h5 class="card-title"> What is <span style="color: #22a6b3; font-weight: bold;"> Polyethylene terephthalate</span> Bottles?</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">PET stands for polyethylene terephthalate, and is a form of 
+            polyester. PET bottles and containers have been safely used to 
+            package beverage, food, personal care and household items since 
+            the introduction of the first PET bottle in the 1970s; they are 
+            easily identified.</p>
+          
+        </div>
+      </div>
+    </div>
+ 
+    <div class="gap-3 col-md-6 col-lg-4 col-sm-12">
+      <div class="card" style="border: 1px solid #22a6b3;">
+        <div class="card-body">
+          <h5 class="card-title"> What is <span style="color: #22a6b3; font-weight: bold;">Polycarbonate </span> <br> Bottles ?</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">Polycarbonate (PC) plastics are a naturally transparent amorphous thermoplastic. Although they are made commercially available in a variety of colors (perhaps translucent and perhaps not), the raw material allows for the internal transmission of light nearly in the same capacity as glass.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="gap-3 col-md-6 col-lg-4 col-sm-12">
+      <div class="card" style="border: 1px solid #22a6b3;">
+        <div class="card-body">
+          <h5 class="card-title"> What is <span style="color: #22a6b3; font-weight: bold;"> Polypropylene </span><br> Bottles ?</h5>
+          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">Polypropylene (PP) are the most common kind of plastic material used in feeding bottles. They are durable, flexible and economical. They are often used to manufacture household items, PP milk bottles are available in both clear or transparent color-tinted
+            A thermoplastic, or thermosoft plastic.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+
+</div>
+  <footer class=" pt-5 pb-5 bg-black w-100" style="color: gray; margin-top: 10%;">
+    <div class="container px-4 text-md-left">
+      <div class="row gx-9">
+        <div class="col-sm-4">
+  
+          <!-- Heading -->
+          <h5 class="text-xs " style="color: #22a6b3;">
+            About Us
+          </h5>
+  
+          <!-- Text -->
+          <p class="mb-6">
+            A bottle is a narrow-necked container made of an impermeable material in various shapes and sizes that stores and transports liquids. Its mouth, at the bottling line, can be sealed with an internal stopper, an external bottle cap, a closure, or induction sealing.
+          </p>
+  
+        </div>
+        <div class="col-sm-4">
+  
+          <!-- Heading -->
+          <h5 class="text-xs "style="color: #48dbfb;">
+
+            Contact info
+          </h5>
+  
+          <!-- List -->
+          <ul class="list-unstyled mb-6">
+            <li class="d-flex mb-2">
+             
+              Aptech North Nazimabad
+            </li>
+            <li class="d-flex mb-2">
+             
+              +9234578969443
+            </li>
+            <li class="d-flex">
+              <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:admin@domain.com " style="color: #22a6b3;">petbot@gmail.com</a>
+            </li>
+          </ul>
+
+          
+  
+        </div>
+        
+        <div class="col-sm-4">
+  
+          <!-- Heading -->
+          <h5 class="text-xs "style="color: #48dbfb;">
+            Opening hours
+          </h5>
+  
+          <!-- Text -->
+          <div class="mb-3">
+            <div class="text-xs">Monday - Thursday</div>
+            <div class="font-serif">10:00 AM - 11:00 PM</div>
+          </div>
+  
+          <!-- Text -->
+          <div class="mb-6">
+            <div class="text-xs">Friday - Sunday</div>
+            <div class="font-serif">12:00 AM - 03:00 AM</div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          
+  
+          <!-- Copyright -->
+         
+        </div>
+      </div>
+    </div>
+   
+
+    <hr style="width: 100%; color:#22a6b3;">
+
+    
+    <div class="d-flex text-center" style="margin-left: 40%;">  
+    
+      &copy; 2023 PETBOT. All rights reserved.
+    </div>
+   
+
+  </footer>
+  
+     
+      
+     <script src="js/universal-cart.js"></script></body>
+   </html>
+

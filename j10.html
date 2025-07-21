@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 20%;
+            cursor: pointer;
+           
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        
+    </script>
+
+<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light" style="background-color:#fafafa;">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size: 40px;"><span>PET</span>BOT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="gallary.html">Gallery</a></li><li class="nav-item"><a class="nav-link" aria-current="page" href="contactus.html">Contact us</a></li><li class="nav-item"><a class="nav-link" href="chart.html"><i class="bx bxs-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+        </li>
+        
+        
+       
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+  <section class="container sproduct my-5 pt-5">
+    <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid pb-1" src="j16.jpg" alt="" style="width: 60%; margin-left: 20%;">
+            <div class="small-img-group">
+              
+              
+               
+                <div class="small-img-col" style="margin-left:40%; margin-top: 20px; border: 1px solid #22a6b3;">
+                    <img src="j16.jpg" width="100%" class="small-img" alt="">
+                  
+                </div>
+            </div>
+            
+            </div>
+           
+            <div class="col-lg-5 col-md-12 col-12">
+              <button class="download-btn">
+                <div class="material-symbols-rounded"> <i class='bx bxs-download'></i></div>
+                <i>
+                 
+                </i>
+              </button>
+           
+                <h6> POP Large Jar</h6>
+                <h3 class="py-1 fw-bold" >OXO Good Grips 5.0 Qt POP Large Jar - Airtight Food Storage- for Cookies and More</h3>
+                <div class="stars">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                 
+              </div>
+              <a href="feedback.html" style="list-style: none; text-decoration: none; color:  #22a6b3;">(Drop your review)</a>
+                <h2>Rs. 500</h2>
+                
+                <input class="mt-4 mb-4" type="number" value="1" id="quantity-input">
+                <a href="chart.html"><div id="btn2"><button onclick="addToCart()">Add To Cart</button></div></a>
+                <h4 class="mt-5 mb-3 fw-bold">Product Details</h4>
+                <span>Product Description
+                    Combining the airtight seal of POP Containers and the familiar shape of a cookie jar, the OXO Good Grips POP Jars make all kinds of cookies and snacks easily accessible. Each jar has a unique pop-up button mechanism that creates an airtight seal with just one touch. The button serves as a handle to easily remove the lid with one hand and the large circular opening makes it easy to access your snacks. The jar’s shape allows for attractive countertop display for a variety of dried foods, while ensuring your items stay fresh. The jar has a flat back to sit flush against a wall and to maximize storage capacity. All POP containers are BPA free.</span>
+
+            </div>
+        </div>
+       
+
+  </section>
+
+
+    <section id="featured" class="my-5 pb-5 " style="margin-top:10%;">
+      <div class="container mt-5 py-5">
+        <h3 class="heading-2 ">Related Products</h3>
+        <hr>
+        
+      </div>
+  
+      <div class="container" style="margin-top: 2px;">
+          <div class="row mx-auto container">
+            <div onclick="window.location.href='pet6.html';" class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="pet6.jpg" alt="" style="height: 200px;">
+              <div class="stars">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+              </div>
+              <h5 class="p-name">Pet Bottle</h5>
+              <h6 class="p-price">PKR 1,150</h6>
+              <button class="buy-button">Shop Now</button>
+  
+          </div>
+              
+      
+          <div  onclick="window.location.href='j7.html';" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3 w-50 " src="j122.jpg" alt="" style="height: 57%;">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <h5 class="p-name">Mouth Half Gallon 64 Oz Jar</h5>
+            <h6 class="p-price">PKR 500</h6>
+            <button class="buy-button">Shop Now</button>
+  
+        </div>
+  
+        <div onclick="window.location.href='oil6.html';" class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="oil6.jpg" alt="" style="height: 200px;">
+          <div class="stars">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+          </div>
+          <h5 class="p-name">Oil Bottle</h5>
+          <h6 class="p-price">PKR 500</h6>
+          <button class="buy-button">Shop Now</button>
+  
+      </div>
+  
+      <div onclick="window.location.href='pet2.html';" class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="pet2.jpg" alt="" style="height: 200px;">
+        <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <h5 class="p-name">Pet Bottle</h5>
+        <h6 class="p-price">PKR 1,150</h6>
+        <button class="buy-button">Shop Now</button>
+  
+    </div>
+              </div>
+          
+  
+  
+              
+                 
+          
+          
+          
+                 
+  
+                 
+                  </div>
+      </div>
+  
+     
+       
+        
+     
+      </section>
+  
+
+
+  
+    <footer class=" pt-5 pb-5 bg-black w-100" style="color: gray; ">
+      <div class="container px-4 text-md-left">
+        <div class="row gx-9">
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs " style="color: #48dbfb;">
+              About Us
+            </h5>
+    
+            <!-- Text -->
+            <p class="mb-6">
+              A bottle is a narrow-necked container made of an impermeable material in various shapes and sizes that stores and transports liquids. Its mouth, at the bottling line, can be sealed with an internal stopper, an external bottle cap, a closure, or induction sealing.
+            </p>
+    
+          </div>
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs "style="color: #48dbfb;">
+
+              Contact info
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6">
+              <li class="d-flex mb-2">
+               
+                Aptech North Nazimabad
+              </li>
+              <li class="d-flex mb-2">
+               
+                +9234578969443
+              </li>
+              <li class="d-flex">
+                <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:admin@domain.com " style="color: #48dbfb;">petbot@gmail.com</a>
+              </li>
+            </ul>
+
+            
+    
+          </div>
+          
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs "style="color: #48dbfb;">
+              Opening hours
+            </h5>
+    
+            <!-- Text -->
+            <div class="mb-3">
+              <div class="text-xs">Monday - Thursday</div>
+              <div class="font-serif">10:00 AM - 11:00 PM</div>
+            </div>
+    
+            <!-- Text -->
+            <div class="mb-6">
+              <div class="text-xs">Friday - Sunday</div>
+              <div class="font-serif">12:00 AM - 03:00 AM</div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+            
+    
+            <!-- Copyright -->
+           
+          </div>
+        </div>
+      </div>
+     
+
+      <hr style="width: 100%; color: #48dbfb;">
+
+      
+      <div class="d-flex text-center" style="margin-left: 40%;">  
+      
+        &copy; 2023 PETBOT. All rights reserved.
+      </div>
+     
+
+    </footer>
+    
+       
+
+
+
+
+
+
+
+<script src="js/universal-cart.js"></script></body>
+</html>
+
+
+
+
